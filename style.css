@@ -54,7 +54,7 @@
   
   @media only screen and (min-width:100em) {
     html {
-      font-size: 100%;
+      font-size: 70%;
     }
   }
   
@@ -122,9 +122,7 @@
     opacity: 0.3;
     transition: all .3s ease-in-out;
     padding: 0 !important;
-    width: 100vw !important;
   }
-  
   .show {
     opacity: 1;
   }
@@ -1053,8 +1051,8 @@
     justify-content: center;
     margin: 0 3rem;
     padding: 5rem 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(33%,1fr));
+    /* grid-template-rows: repeat(6, 1fr); */
     gap: 3rem;
     font-size: 1.2rem;
     list-style: circle;
@@ -1083,7 +1081,7 @@
       text-align: initial;
       font-size: 1.5rem;
       align-items: baseline;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
       overflow-wrap: break-word;
       gap: 2rem 3rem;
     }
@@ -1172,10 +1170,10 @@
     margin-inline: 5rem;
   }
   .Others__slide{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: absolute;
-    /* margin-top: 2rem; */
+    overflow:hidden
   }
   .Others__btn{
     cursor: pointer;
@@ -1203,7 +1201,7 @@
       width: 8rem;
       font-size: 8em;
       position: absolute;
-      top: 100%;
+      top: 0%;
       display: inline-block;
       text-align: center;
 
