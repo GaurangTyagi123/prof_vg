@@ -283,6 +283,17 @@
   .Others__list-item:hover .submenu{
     display: flex;
   }
+  .Others__list-link{
+    position: relative;
+  }
+  .Others__list-link::after{
+    content: "⌄";
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    /* background-color: #eee; */
+  }
   .profile {
     background-image: linear-gradient(110deg, #fff, #eeeeee 50%, #A4243B 50%);
     grid-column: 1/-1;
@@ -568,7 +579,7 @@
     font-family: "Poppins";
     overflow-wrap: break-word;
     /* margin-inline: 5rem; */
-    text-align: center;
+    /* text-align: center; */
   }
   @media only screen and (max-width:40.635em){
     .profile__hidden{
@@ -733,7 +744,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
   }
   
@@ -1318,13 +1329,14 @@
   }
   .presentation__international__subheading{
     font-size: 2rem;
+    grid-column: 1/-1;
     width: 75%;
     align-self: flex-start;
     font-weight: 200;
     line-height: 3rem;
   }
   .presentation__international__list--ordered{
-    list-style: lower-roman;
+    /* list-style: lower-roman; */
     height: 33%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
@@ -1349,10 +1361,14 @@
   .research__grants{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    gap: 1rem;
-    justify-content: space-evenly;
-    /* height: 100%; */
+    align-items: center;
+    justify-content: space-between;
+  }
+  .research__grants_grant{
+    margin-top: 2rem;
+  }
+  .research__grants_proposals{
+    height: 33%;
   }
   .grant__heading{
     font-size: 1.5rem;
