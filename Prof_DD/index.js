@@ -47,10 +47,6 @@ const setColor = (color1,color2,color3) => {
     root.style.setProperty('--color-primary', color1);
     root.style.setProperty('--color-secondary', color2);
     root.style.setProperty('--color-tertiary', color3);
-
-    if (color1.split('')[color1.length - 2].charCodeAt(0) < 65){
-        root.style.setProperty('--color-list', '#eee');
-    }
 }
 const setFont = (font) => {
     const root = document.querySelector(":root");
@@ -62,7 +58,8 @@ let colors = {
     'blue_dark': ['#1A086D', '#350FDB', '#330FD3'],
     'blue_light': ['#1A468E', '#0F5AD3', '#0F5EDB'],
     'green': ['#086D48', '#198E64', '#0FD38B'],
-    'red' : ['#6D1308', '#DB270F', '#D3260F']
+    'red': ['#6D1308', '#DB270F', '#D3260F'],
+    'blue' : ['#4062A3','#4D77C5','#5D91F0']
 }
 let color = params.get("c");
 let font = params.get("f")
