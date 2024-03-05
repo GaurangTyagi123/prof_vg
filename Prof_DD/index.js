@@ -42,6 +42,33 @@ document.addEventListener("click", e => {
         check.checked = false;
     }
 })
+const setColor = (color1,color2,color3) => {
+    const root = document.querySelector(":root");
+    root.style.setProperty('--color-primary', color1);
+    root.style.setProperty('--color-secondary', color2);
+    root.style.setProperty('--color-tertiary', color3);
+
+    if (color1.split('')[color1.length - 2].charCodeAt(0) < 65){
+        root.style.setProperty('--color-list', '#eee');
+    }
+}
+const setFont = (font) => {
+    const root = document.querySelector(":root");
+    root.style.setProperty('--font',font)
+}
+let params = new URLSearchParams(location.href.split("?")[1])
+let colors = {
+    'peach': ['#8F2D0A', '#DB460F', '#D3430F'],
+    'blue_dark': ['#1A086D', '#350FDB', '#330FD3'],
+    'blue_light': ['#1A468E', '#0F5AD3', '#0F5EDB'],
+    'green': ['#086D48', '#198E64', '#0FD38B'],
+    'red' : ['#6D1308', '#DB270F', '#D3260F']
+}
+let color = params.get("c");
+let font = params.get("f")
+setColor(colors[color][0], colors[color][1], colors[color][2])
+setFont(font)
+
 // const othersContainer = document.querySelector(".Others__container")
 // const otherDivs = Array.from(othersContainer.children);
 // const left = document.querySelector(".Others__left")
