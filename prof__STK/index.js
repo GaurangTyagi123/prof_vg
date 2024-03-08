@@ -63,9 +63,27 @@ let colors = {
 }
 let color = params.get("c");
 let font = params.get("f")
-setColor(colors[color][0], colors[color][1], colors[color][2])
-setFont(font)
 
+const getFont = async () => {
+    try {
+        let response = await fetch(`https://fonts.googleapis.com/css?family=${font}:300,400`);
+        response = await response.text();
+        const exp = new RegExp(/url\(.*?\)/)
+        url = exp.exec(response)[0]
+        const f = new FontFace(font, url)
+        document.fonts.add(f)
+    }
+    catch(e){
+        console.log("Font not found"+e)
+    }
+}
+    
+if(color)
+    setColor(colors[color][0], colors[color][1], colors[color][2])
+if (font) {
+    getFont()
+    setFont(font)
+}
 // const othersContainer = document.querySelector(".Others__container")
 // const otherDivs = Array.from(othersContainer.children);
 // const left = document.querySelector(".Others__left")
