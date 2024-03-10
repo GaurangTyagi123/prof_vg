@@ -62,9 +62,46 @@ let colors = {
 }
 let color = params.get("c");
 let font = params.get("f")
+if(color)
 setColor(colors[color][0], colors[color][1], colors[color][2])
+if(font)
 setFont(font)
 
+const moreDetails = document.querySelector(".more")
+const lessDetails = document.querySelector(".less")
+const profileHidden = document.querySelector(".profile__hidden")
+
+moreDetails.addEventListener("click", e => {
+    profileHidden.setAttribute('data-hidden', false)
+})
+lessDetails.addEventListener("click", e => {
+    profileHidden.setAttribute('data-hidden', true)
+})
+
+const seemore = document.querySelectorAll(".btn__seemore")
+seemore.forEach(ele => {
+    let flag = false;
+    ele.addEventListener("click", e => {
+        if (!flag) {
+            const parent = e.target.parentNode;
+            const sibling = e.target.previousElementSibling;
+            sibling.style.overflow = 'auto'
+            sibling.style.height = '70%'
+            parent.style.overflow = 'auto';
+            ele.textContent = 'see less'
+            flag = !flag;
+        }
+        else {
+            const parent = e.target.parentNode;
+            const sibling = e.target.previousElementSibling;
+            sibling.style.overflow = 'hidden'
+            sibling.style.height = '33%'
+            ele.textContent = 'see more'
+            flag = !flag;
+        }
+    })
+    
+})
 // const othersContainer = document.querySelector(".Others__container")
 // const otherDivs = Array.from(othersContainer.children);
 // const left = document.querySelector(".Others__left")
@@ -109,17 +146,6 @@ setFont(font)
 //         prevDiv.classList.add("current__div")
 //     }
 // })
-// const moreDetails = document.querySelector(".more")
-// const lessDetails = document.querySelector(".less")
-// const profileHidden = document.querySelector(".profile__hidden")
-
-// moreDetails.addEventListener("click", e => {
-//     profileHidden.setAttribute('data-hidden', false)
-// })
-// lessDetails.addEventListener("click", e => {
-//     profileHidden.setAttribute('data-hidden', true)
-// })
-
 // const othersListItem = document.querySelector(".Others__list-item")
 // othersListItem.addEventListener("click", e => {
 //     e.preventDefault()
@@ -145,28 +171,4 @@ setFont(font)
 //         }
 //     }
 //     location.href = '#Others'
-// })
-// const seemore = document.querySelectorAll(".btn__seemore")
-// seemore.forEach(ele => {
-//     let flag = false;
-//     ele.addEventListener("click", e => {
-//         if (!flag) {
-//             const parent = e.target.parentNode;
-//             const sibling = e.target.previousElementSibling;
-//             sibling.style.overflow = 'auto'
-//             sibling.style.height = '70%'
-//             parent.style.overflow = 'auto';
-//             ele.textContent = 'see less'
-//             flag = !flag;
-//         }
-//         else {
-//             const parent = e.target.parentNode;
-//             const sibling = e.target.previousElementSibling;
-//             sibling.style.overflow = 'hidden'
-//             sibling.style.height = '33%'
-//             ele.textContent = 'see more'
-//             flag = !flag;
-//         }
-//     })
-    
 // })

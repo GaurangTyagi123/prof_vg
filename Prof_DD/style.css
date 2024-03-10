@@ -362,7 +362,7 @@ section {
 @media only screen and (max-width: 43.75em) {
   .contact {
     width: 100%;
-    height: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -494,7 +494,7 @@ section {
 @media only screen and (max-width:37.5em) {
   .contact__details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .detail__container {
@@ -506,6 +506,7 @@ section {
 .btn__details {
   height: 3em;
   width: 8em;
+  justify-self: center;
   text-align: center;
   border-radius: 1rem;
   border: none;
@@ -588,10 +589,11 @@ section {
 
   .profile__hidden--detail__container {
     width: 90%;
-    /* margin-top: -10rem; */
     margin-left: 2rem;
   }
-
+  .second{
+    margin-top: 0 !important;
+  }
   .less {
     margin-left: 2rem;
   }
