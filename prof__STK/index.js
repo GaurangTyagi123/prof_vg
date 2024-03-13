@@ -59,7 +59,8 @@ let colors = {
     'blue_light': ['#1A468E', '#0F5AD3', '#0F5EDB'],
     'green': ['#086D48', '#198E64', '#0FD38B'],
     'red': ['#6D1308', '#DB270F', '#D3260F'],
-    'blue' : ['#4062A3','#4D77C5','#5D91F0']
+    'blue' : ['#4062A3','#4D77C5','#5D91F0'],
+    'black' : ['#0D0B0E','#0D0B0E','#0D0B0E']
 }
 let color = params.get("c");
 let font = params.get("f")
