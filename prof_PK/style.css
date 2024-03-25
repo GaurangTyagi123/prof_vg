@@ -101,7 +101,7 @@ body {
   display: grid;
   height: 100vh;
   /* overflow-x: hidden; */
-  grid-template-rows: 0vh 100vh 100vh max-content  max-content max-content max-content max-content 100vh 100vh max-content max-content;
+  grid-template-rows: 0vh 100vh 100vh max-content  max-content max-content max-content max-content 100vh max-content max-content;
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
   scroll-behavior: smooth;
   scroll-padding: 10rem;
@@ -120,14 +120,14 @@ body {
 
 @media only screen and (max-width: 40.635em) {
   .container {
-    grid-template-rows: 0vh 100vh 100vh 150vh  max-content max-content max-content max-content 60vh 60vh max-content max-content;
+    grid-template-rows: 0vh 100vh 100vh 150vh  max-content max-content max-content max-content 60vh  max-content max-content;
     grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 38.75em) {
   .container {
-    grid-template-rows: 0vh 100vh 60vh 180vh max-content max-content max-content max-content 60vh 60vh max-content max-content;
+    grid-template-rows: 0vh 100vh 60vh 180vh max-content max-content max-content max-content 60vh  max-content max-content;
     grid-template-columns: 1fr;
   }
 }
