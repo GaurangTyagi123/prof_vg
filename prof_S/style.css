@@ -468,6 +468,7 @@ section {
 .contact .detail {
   font-size: 1.5rem;
   font-weight: 200;
+  text-align: start;
   letter-spacing: .3rem;
   color: var(--white);
   display: inline-block;
