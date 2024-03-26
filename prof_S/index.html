@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200|Roboto:200">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Times New Roman:300,400|Poppins:300,400,500|Garamond:200,300,400|Cambria:200,300,400|Lato:200,300|Constantia:300,400|Helvetica:200,300,400">
+    <script src="index.js" defer></script>
+    <title>Prof | Sunila </title>
+</head>
+
+<body>
+    <div class="hamburger">
+        <input type="checkbox" name="check" id="check" class="hamburger__check">
+        <label for="check" class="hamburger__label">&nbsp;</label>
+        <div class="hamburger__background">&nbsp;</div>
+        <div class="hamburger__content">
+            <ul class="hamburger__list">
+                <li class="hamburger__list-item"><a href="#profile" class="hamburger__link">Profile</a></li>
+                <li class="hamburger__list-item"><a href="#education" class="hamburger__link">Education
+                        Qualification</a></li>
+                <li class="hamburger__list-item"><a href="#experience" class="hamburger__link">Experience</a></li>
+                <li class="hamburger__list-item"><a href="#patentsPubs" class="hamburger__link">Research Guidance</a>
+                </li>
+                <li class="hamburger__list-item"><a href="#publications" class="hamburger__link">Publications</a></li>
+                <li class="hamburger__list-item"><a href="#book" class="hamburger__link">Book Chapters</a></li>
+                <li class="hamburger__list-item"><a href="#conference" class="hamburger__link">Others</a></li>
+                <li class="hamburger__list-item"><a href="#awards" class="hamburger__link">Awards</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <header class="college" id="college">
+            <ul class="college__list">
+                <li class="college__list__item"><a class="college__list__link" href="#profile">Profile</a></li>
+                <li class="college__list__item"><a class="college__list__link" href="#education">Education
+                        Qualification</a></li>
+                <li class="college__list__item"><a class="college__list__link" href="#experience">experience</a></li>
+                <li class="college__list__item"><a class="college__list__link" href="#patentsPubs">Research Guidance</a>
+                </li>
+                <li class="college__list__item"><a class="college__list__link" href="#publications">Publications</a>
+                </li>
+                <li class="college__list__item"><a class="college__list__link" href="#book">Book Chapters</a></li>
+                <li class="college__list__item Others__list-item">
+                    <a class="college__list__link Others__list-link" >Others</a>
+                    <ul class="submenu">
+                        <li class="submenu__list-item"><a href="#conference">conference</a></li>
+                        <li class="submenu__list-item"><a href="#invitedtalks">Invited Talks</a></li>
+                        <li class="submenu__list-item"><a href="#workshops">Workshops</a></li>
+                        <li class="submenu__list-item"><a href="#researchprojects">research projects</a></li>
+                    </ul>
+                </li>
+                <li class="college__list__item"><a class="college__list__link" href="#awards">awards</a></li>
+            </ul>
+        </header>
+        <section class="profile" id="profile">
+            <div class="profile__hidden" data-hidden="true">
+                <div class="profile__hidden--detail__container -u-mtop"
+                    onclick="window.open('https:\\scholar.google.com/citations?hl=en&user=SyAQ-4gAAAAJ','_blank')">
+                    <svg class="profile__hidden__icon">
+                        <use xlink:href="../icomoon/symbol-defs.svg#icon-google-scholar"></use>
+                    </svg>
+                    <span class="profile__hidden--detail">https://scholar.google.com/citations?hl=en&user=SyAQ-4gAAAAJ
+                    </span>
+                </div>
+                <div class="profile__hidden--detail__container -u-mtop second"
+                    onclick="window.open('https:\\www.researchgate.net/profile/Sunila-Hooda','_blank')">
+                    <svg class="profile__hidden__icon">
+                        <use xlink:href="../icomoon/symbol-defs.svg#icon-researchgate"></use>
+                    </svg>
+                    <span class="profile__hidden--detail">https://www.researchgate.net/profile/Sunila-Hooda
+                    </span>
+                </div>
+                <div class="profile__hidden--detail__container">
+                    <svg class="profile__hidden__icon">
+                        <use xlink:href="../icomoon/symbol-defs.svg#icon-profile"></use>
+                    </svg>
+                    <span class="profile__hidden--detail">orcid: 0000-0002-8768-8367</span>
+                </div>
+                <div class="profile__hidden--detail__container"
+                    onclick="window.open('https:\\vidwan.inflibnet.ac.in/profile/394453','_blank')">
+                    <svg class="profile__hidden__icon">
+                        <use xlink:href="../icomoon/symbol-defs.svg#icon-profile"></use>
+                    </svg>
+                    <span class="profile__hidden--detail">Vidwan-ID:394453</span>
+                </div>
+                <button class="btn__details less">Go back</button>
+            </div>
+            <div class="profile__container">
+                <img src="sunila.jpeg" alt="profile picture" class="profile__photo">
+                <p class="profile__name">Dr. Sunila Hooda</p>
+                <p class="profile__designation">Assistant - Professor</p>
+                <a href="sunila.pdf" download="resume" class="btn">DOWNLOAD CV</a>
+            </div>
+            <div class="contact" id="contact">
+
+                <div class="contact__details">
+                    <p class="contact__heading">Contact Details</p>
+                    <div class="contact__details-address detail__container"
+                        onclick="window.open('https:\\maps.app.goo.gl/8kauF9SK8pgwysCCA','_blank')">
+                        <svg class="contact__icon">
+                            <!-- <use xlink:href="https://gaurangtyagi123.github.io/icomoon/symbol-defs.svg#icon-location-pin"></use> -->
+                            <use xlink:href="../icomoon/symbol-defs.svg#icon-location-pin"></use>
+                        </svg>
+                        <span class="contact__details__address detail">Department of Microbiology, Ram Lal
+                            Anand College, University of Delhi,
+                            5,Benito Juarez Road, Dhaula Kuan, New
+                            Delhi-110021
+                        </span>
+                    </div>
+                    <div class="contact__details-email detail__container"
+                        onclick="window.open('mailto:sunilahooda.micro@rla.du.ac.in','emailWindow')">
+                        <svg class="contact__icon">
+                            <!-- <use xlink:href="https://gaurangtyagi123.github.io/icomoon/symbol-defs.svg#icon-mail"></use> -->
+                            <use xlink:href="../icomoon/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        <span
+                            class="contact__details__email detail">Sunilahooda@gmail.com,<br>sunilahooda.micro@rla.du.ac.in
+                        </span>
+                    </div>
+                    <!-- <div class="contact__details-phone detail__container">
+                        <svg class="contact__icon">
+                            <use xlink:href="../icomoon/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <span class="contact__details__phone detail">+91-9560877741</span>
+                    </div> -->
+                    <button class="btn__details more">More Details</button>
+                </div>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="education__heading">Education Qualification</div>
+            <div class="education__container">
+                <div class="education__1">
+                    <p class="course">PhD</p>
+                    <p class="year">2020</p>
+                    <p class="institution">Center for Historical Studies, Jawaharlal Nehru
+                        University, New Delhi.</p>
+                </div>
+                <div class="education__1">
+                    <p class="course">PhD (Biotechnology)</p>
+                    <p class="year">2004-2011 </p>
+                    <p class="institution">Guru Gobind Singh Indraprastha
+                        University, New Delhi</p>
+                </div>
+                <div class="education__1">
+                    <p class="course">MSc (Microbiology)</p>
+                    <p class="year">2000-2002</p>
+                    <p class="institution">Kurukshetra University</p>
+                </div>
+                <div class="education__1">
+                    <p class="course">BSc</p>
+                    <p class="year">1997-2000</p>
+                    <p class="institution">MDU, Rohtak</p>
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <div class="careerProfile">
+                <h3 class="careerProfile__heading">Career Profile</h3>
+                <ul class="careerProfile__list">
+                    <li class="carrerProfile__list__item"><b class="-u--primary">Assistant Professor</b> Department of
+                        Microbiology, Ram Lal Anand
+                        College since 11th
+                        April 2023</li>
+                    <li class="carrerProfile__list__item"><b class="-u--primary">Assistant Professor (ad-hoc)</b>,
+                        Department of Microbiology, Ram
+                        Lal Anand College
+                        since Jan 2016 till 10th April 2023</li>
+                    <li class="carrerProfile__list__item"><b class="-u--primary">Principal Investigator</b> Project,
+                        (DBT-BioCARe), School of
+                        Biotechnology, GGS
+                        Indraprastha University, New Delhi from Nov 2012- Jan 2016</li>
+                    <li class="carrerProfile__list__item"><b class="-u--primary">Research Associate</b>, School of
+                        Biotechnology, GGS Indraprastha
+                        University, New
+                        Delhi from Sep 2010 – Oct 2012</li>
+                </ul>
+            </div>
+            <div class="adminAssignment">
+                <h3 class="adminAssignment__heading">Administrative Assignment</h3>
+                <ul class="adminAssignment__list">
+                    <li class="adminAssignment__list__item -u--span"><b class="-u--primary">Current</b>:</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Prospectus Committee
+                        (2023-24)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Function Committee
+                        (2023-24)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b> Yoga and Meditation
+                        Society (2023-24)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Internal Auditor</b> ISO committee
+                        (ISO 21001: 2018)</li><br>
+                    <li class="adminAssignment__list__item -u--span"><b class="-u--primary">Previous:</b></li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Convener</b>, Mikrobiologika
+                        (2022-23)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Prospectus Committee
+                        (2022-23)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Function Committee
+                        (2022-23)
+                        www.du.ac.in Page 1</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b> Yoga and Meditation
+                        Society (2022-23)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Member</b>, Advisory Committee,
+                        DBT-Star College Scheme- RLA
+                        College</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Convener</b>, Yoga and Meditation
+                        Society (2020-21)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Prospectus Committee
+                        (2020-21)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Co-convener</b>, Yoga and Meditation
+                        Society (2019-20)</li>
+                    <li class="adminAssignment__list__item"><b class="-u--primary">Member</b>, Counseling and Placement
+                        Cell (2020-21), Member,
+                        Functions Committee,</li>
+                    <li class="adminAssignment__list__item">Member, Alumni Committee, Member, Women Welfare Advisory
+                        Committee Member,
+                        Debate and Quiz Society</li>
+                </ul>
+            </div>
+            <div class="specialization">
+                <h3 class="specialization__heading">Area of specialization</h3>
+                <ul class="specialization__list">
+                    <li class="specialization__item">Plastic biodegradation</li>
+                    <li class="specialization__item">Metagenomics</li>
+                    <li class="specialization__item">functional genomics</li>
+                    <li class="specialization__item">Cyanobacteria</li>
+                    <li class="specialization__item">Nutrient limitation and response</li>
+
+                </ul>
+            </div>
+            <div class="specialization subjects__taught">
+                <h3 class="specialization__heading">Subjects Taught</h3>
+                <ul class="specialization__list">
+                    <li class="specialization__item">Bioinformatics</li>
+                    <li class="specialization__item">Molecular Biology</li>
+                    <li class="specialization__item">Bacteriology</li>
+                    <li class="specialization__item">Biosafety and Intellectual Property Rights</li>
+                    <li class="specialization__item">Instrumentation and Bio –techniques</li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="patentsPubs" id="patentsPubs">
+            <div class="patentsPubs__container">
+                <h2 class="heading__2  -u--white -u-ptop">Research Guidance </h2>
+                <div class="patentsPubs__USPatents patentsPubs__content__container">
+                    <!-- <h3 class="patentsPubs__heading">ICSSR Short-Term Empirical Research Project 2023</h3> -->
+                    <ul class="patentsPubs__list">
+                        <li><b>Co-Supervisor</b>, M. tech thesis “In-vivo and in-vitro interaction studies of NtcB and
+                            PII in Arthrospira platensis PCC 7345” submitted by Sunaina Verma, GGS
+                            Indraprastha University, Delhi</li>
+                        <li>Guided 8 students under <b>DBT Star College Summer project</b> “To perform genome
+                            sequence analysis for heavy metal resistance genes of bacteria by using
+                            bioinformatics tools” (1 June to 31st
+                            July 2020)</li>
+
+                    </ul>
+                </div>
+                <div class="patentsPubs__USPublished patentsPubs__content__container">
+                    <!-- <h3 class="patentsPubs__heading">Faculty Research Programme (FRP) of IoE scheme, Delhi University
+                    </h3> -->
+                    <ul class="patentsPubs__list">
+                        <li> Guided 11 students under the project <b>“Isolation and screening of plastic degrading
+                                bacteria from soils collected from different landfill sites of Delhi”</b>, CRG Project
+                            2020-22</li>
+                        <li> <b>Co-Supervising</b> 1 JRF in ICMR Funded Project</li>
+                        <li> Guiding 7 students in <b>CRG-2 project (2023-24)</b></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="publications" id="publications">
+            <h2 class="heading__2 -u-ptop publications__heading">Publications</h2>
+            <ul class="publications__list">
+                <li class="publication__item"><b class="-u--primary">Hooda, S.,</b> Malik, G., Saini, P., Grewall, A., &
+                    Pandey, V. C. (2023).
+                    Cyanobacteria as a
+                    potential bioasset for restoring degraded land. Land Degradation & Development,
+                    1– 16. <a href="https://doi.org/10.1002/ldr.4711" target="_blank" rel="noopener noreferrer">link</a>
+                </li>
+                <li class="publication__item">Bahuguna, M, <b class="-u--primary">Hooda, S.</b>, Mohan L, Gupta RK,
+                    Diwan P. (2023) Identifying
+                    oral
+                    microbiome alterations in adult betel quid chewing population of Delhi, India. PLOS
+                    ONE 18(1): e0278221. <a href="https://doi.org/10.1371/journal.pone.0278221" target="_blank">link</a>
+                </li>
+                <li class="publication__item"> Saini, P., Grewall, A. <b class="-u--primary">Hooda, S.</b> (2022). In
+                    silico approach for
+                    identification of
+                    polyethylene terephthalate hydrolase (PETase)-like enzymes. Bioremediation
+                    Journal, <a href="https://doi.org/10.1080/10889868.2022.2054931" target="_blank">link</a></li>
+                <li class="publication__item"> Móring, A, <b class="-u--primary">Hooda, S.</b>, Raghuram, N., Adhya,
+                    T.K. et al (2021). Nitrogen
+                    challenges
+                    and opportunities for agricultural and environmental science in India. Frontiers in
+                    Sustainable Food Systems, 5, 505347. doi: 10.3389/fsufs.2021.505347</li>
+                <li class="publication__item"> <b class="-u--primary">Lochab, S.</b>, Kumar, P.A. and Raghuram N.
+                    (2014). Molecular
+                    characterization of
+                    nitrate uptake and assimilatory pathway in Arthrospira platensis reveals nitrate
+                    induction and differential regulation. Arch. Microbiol. DOI
+                    10.1007/s00203-014-0973-3.</li>
+                <li class="publication__item"> Pathak, R.R and <b class="-u--primary">Lochab, S.</b> (2010). A method
+                    for rapid isolation of total
+                    RNA of high
+                    purity and yield from Arthrospira platensis. Canadian J. of Microbiol. 56(7): 578-584.</li>
+                <li class="publication__item"> <b class="-u--primary">Lochab, S.,</b> Oberoi, H.S., Gothwal, M., Abbey,
+                    D. and Raghuram N. (2009).
+                    Nitrate
+                    assimilatory enzymes are more thermotolerant in Spirulina (Arthrospira) platensis
+                    than rice. Physiol Mol Biol Plants 15 (3): 277-280.</li>
+                <li class="publication__item"> Pathak, R.R., Ahmad, A., <b class="-u--primary">Lochab, S.</b> and
+                    Raghuram, N. (2008). Molecular
+                    physiology
+                    of plant N-use efficiency and biotechnological options for its enhancement. Curr. Sci.
+                    94 (11): 1394-1403.</li>
+
+            </ul>
+        </section>
+        <section class="publications" id="book">
+            <h2 class="heading__2 -u-ptop publications__heading">Book Chapters</h2>
+            <ul class="publications__list">
+                <li class="publication__item">Podia, M. Yadav, P., <b class="-u--primary">Hooda, S.</b>, Diwan, P. and
+                    Gupta, RK. (2023). Microbial
+                    Weathering
+                    of Rocks in Natural Habitat: Genetic Basis and Omics-Based Exploration, In: Weathering
+                    and Erosion Processes in the Natural Environment, Editor(s): Virendra Bahadur Singh,
+                    Sughosh Madhav, Naresh Chandra Pant, Ravi Shekhar, pp:265-302, ISBN:
+                    978-1-394-15733-41, 4 John Wiley & Sons Ltd.</li>
+                <li class="publication__item"><b class="-u--primary">Hooda S</b>, George AJ, Sharma V, Gupta V. (2023)
+                    Mycotoxins: Detection
+                    Methods and
+                    Strategies for Management, In: Fungal Resources for Sustainable Economy, Editor:
+                    Singh I, Chapter 19, pp:509-530, Springer International DOI:
+                    <a href="https://doi.org/10.1007/978-981-19-9103-5." target="_blank">link</a> ISBN 978-981-19-9105-9
+                </li>
+                <li class="publication__item">Khurana, R., Maurya, M., Swami, <b class="-u--primary">S., Hooda</b>, S.
+                    (2022). Anticancer Compounds
+                    from
+                    Selected Medicinal Plants: An update, In: Medicinal Plants: Ethnomedicine,
+                    Pharmacognosy and Therapeutic Values, Editor(s): (Amita Sharma, Garima Malik,
+                    Sanyogita Kumar, pp: 182-205, ISBN: 978-93-90879-31-1, Anu Books, India., DO1:
+                    <a href="https://doi.org/10.31995/Book.AB220-A22." target="_blank">link</a> )
+                </li>
+                <li class="publication__item">Malik,G., <b class="-u--primary">Hooda, S.</b>, Majeed, S., Pandey, VC
+                    (2022). Understanding assisted
+                    phytoremediation: Potential tools to enhance plant performance, In: Assisted
+                    Phytoremediation, Editor(s): Vimal Pandey, Elsevier, 2022, Pages 1-24, ISBN
+                    9780128228937, <a href="https://doi.org/10.1016/B978-0-12-822893-7.00015-X" target="_blank">link</a>
+                </li>
+                <li class="publication__item"> Malik, G., Chugh, S., <b class="-u--primary">Hooda, S.</b>, Chaturvedi,
+                    R. (2022). Plant Growth
+                    Promoting
+                    Rhizobacteria (PGPR)-Assisted Phytoremediation of Contaminated Soils. In: Singh,
+                    A.K., Tripathi, V., Shukla, A.K., Kumar, P. (eds) Bacterial Endophytes for Sustainable
+                    Agriculture and Environmental Management. Springer, Singapore. Pp71-93, Print ISBN:
+                    978-981-16-4496-2, Online ISBN: 978-981-16-4497-9
+                    <a href="https://doi.org/10.1007/978-981-16-4497-9_4" target="_blank">link</a>
+                </li>
+                <li class="publication__item"> Malik, G., Chaturvedi, R, <b class="-u--primary">Hooda, S.</b> (2021).
+                    Role of herbivore-associated
+                    molecular
+                    patterns (hamps) in modulating plant defenses. In: Singh I.K., Singh A. (eds) Plant-Pest
+                    Interactions: From molecular mechanisms to chemical ecology. Springer, Singapore.
+                    ISBN (978-981-15-2466-0), Online ISBN (978-981-15-2467-7).
+                    <a href="https://doi.org/10.1007/978-981-15-2467-7_1" target="_blank">link</a>
+                </li>
+                <li class="publication__item"> Malik G., Singh N., <b class="-u--primary">Hooda S. (2020)</b>. Nitrogen
+                    Stress in Plants and the
+                    Role of
+                    Phytomicrobiome. In: Kumar M., Kumar V., Prasad R. (eds) Phyto-Microbiome in
+                    Stress Regulation. Environmental and Microbial Biotechnology, Springer, Singapore
+                    Print ISBN:978-981-15-2575-9, Online ISBN:978-981-15-2576-6</li>
+                <li class="publication__item"> Sutton, M. A., Drewer, J., Moring, A., Adhya, T., Ahmad A., Bhatia, A.,
+                    Brownlie, W.,
+                    Dragosits, U., Ghude, S. D., Hillier, J., <b class="-u--primary">Hooda, S.</b>, … and Raghuram, N.
+                    (2018). The
+                    Indian nitrogen challenge in a global perspective. In: The Indian Nitrogen
+                    Assessment: Sources of Reactive Nitrogen, Environmental and Climate Effects,
+                    Management Options, and Policies..: Abrol, Y. P., Adhya, T. K., Aneja, V. P., Raghuram,
+                    N., Pathak, H., Kulshrestha, U., Sharma, C. and Singh, B. (Eds) Elsevier, UK. ISBN:
+                    978-0-12-811836-8. Pp. 9-28</li>
+                <li class="publication__item"> Pathak, R.R., <b class="-u--primary">Lochab, S.</b> and Raghuram N
+                    (2011). Improving nitrogen use
+                    efficiency.
+                    In: Comprehensive Biotechnology 2
+                    nd Edition Vol 4, pp.209-218, Elsevier, Oxford.
+                    ISBN: 978-0-08-088504-9</li>
+                <li class="publication__item"> <b class="-u--primary">Lochab, S.</b>, Ali, A. Jha, P., Sharma, V.,
+                    Abbey, D. and Raghuram, N.
+                    (2010). Assay
+                    methods for nitrate assimilatory enzymes in Spirulina (Arthrospira). In Protocols in
+                    Algal Research, Bagchi, S.N. Mohanty, P. and Kleinber, D. (Eds). Narosa, pp.179-189.
+                    ISBN: 978-81-8487-059-6.</li>
+                <li class="publication__item"> <b class="-u--primary">Lochab, S.</b>, Pathak, R. R. and Raghuram, N.
+                    (2007). Molecular approaches
+                    for
+                    enhancement of nitrogen use efficiency in plants. In Agricultural Nitrogen use & its
+                    Environmental Implications, Y.P. Abrol, N. Raghuram and M.S. Sachdev (Eds). IK
+                    International, Delhi. Pp. 327-350. ISBN: 978-81-89866-33-4</li>
+                <li class="publication__item"> Sequence submissions in GenBank (NCBI): 16</li>
+
+
+            </ul>
+        </section>
+        <section class="book resource" id="conference">
+            <h2 class="heading__2 -u-ptop book__heading">Conference</h2>
+            <ul class="book__list conference">
+                <li class="book__item">Kumari S. P., Podia, M., <b class="-u--primary">Hooda, S.</b> Diwan, P. and Gupta
+                    R.K. (2023). A strategy
+                    for
+                    efficient air sampling and metagenomic DNA extraction in 63rd Annual
+                    International Conference of Association of Microbiologists of India (AMI) “Microbial
+                    technologies for sustainable biosphere” held from 2nd to 4th February 2023 at
+                    Rohtak, India</li>
+                <li class="book__item"> Podia, M., <b class="-u--primary">Hooda, S.</b> Diwan, P. and Gupta R.K. (2023).
+                    Mapping of air microbiome
+                    in
+                    OPDs of government hospitals through metagenomics approach: A special emphasis
+                    to resistance in 63rd Annual International Conference of Association of
+                    Microbiologists of India (AMI) “Microbial technologies for sustainable biosphere”
+                    held from 2nd to 4
+                    th February 2023 at Rohtak, India</li>
+                <li class="book__item"> Yadav P., <b class="-u--primary">Hooda, S.</b>, Gupta R.K. and Diwan, P. (2023).
+                    Whole metagenome
+                    sequencing
+                    based analysis of water from urban STP to assess community characteristics and
+                    resistance gene repertoire in 63rd Annual International Conference of Association
+                    of Microbiologists of India (AMI) “Microbial technologies for sustainable biosphere”
+                    held from 2nd to 4
+                    th February, 2023 at Rohtak, India
+                </li>
+                <li class="book__item">Saini, P. Grewall, A. and <b class="-u--primary">Hooda, S.</b> (2021). In Silico
+                    approach for identification
+                    of
+                    potential plastic degrading bacteria, International Conference “The World Microbe
+                    Forum 2021” organized online by ASM and FEMS from 20-24 June 2021.</li>
+                <li class="book__item"> Hooda, S., Raghuram, N. (2018). Prospects of developing Arthrospira (Spirulina)
+                    platensis as a bioremediation tool for potable water sources. National Conference on
+                    “Strategies to Mitigate the Effects of Climate Change: Steps Towards Sustainable
+                    Development” 8-9 December, 2017 at Maharaja Agrasen University, Baddi, District
+                    Solan, H.P.</li>
+                <li class="book__item"> Sharma S, Akanksha, Joshi M, Chopra U, Sharma A, Barik V, Mehta S, Jyoti N,
+                    Rashmi,
+                    Sharma SK, Gupta V,<b class="-u--primary">Hooda, S.</b> and Gupta RK. Occurrence of carbapenem and
+                    multidrug resistant Gram positive bacteria in air of overcrowded subway metro
+                    stations in Delhi, India. 57th Annual Conference and International Symposium of
+                    Association of Microbiologists of India, Guwahati, Assam, 24-27 November 2016.</li>
+                <li class="book__item"> Sharma S, Akanksha, Joshi M, Chopra U, Sharma A, Barik V, Mehta S, Jyoti N,
+                    Rashmi,
+                    Sharma SK, Gupta V, <b class="-u--primary">Hooda S</b> and Gupta RK. Dissemination of antimicrobial
+                    resistance among aeromicroflora of Delhi environment: a serious public health
+                    implication. International Conference on Strategies for Environmental Protection
+                    and Management (ICSEPM-2016), JNU, New Delhi, 11-13 December, 2016.</li>
+                <li class="book__item"> <b class="-u--primary">Lochab, S.</b>, Angmo, S., Singh N., Mishra, S. and
+                    Raghuram, N. (2015).
+                    Understanding
+                    the role of PII protein in Arthrospira platensis PCC 7345. 6th Congress of European
+                    Microbiologists, FEMS 2015, 7th-11th
+                    June 2015 in Maastricht, Netherlands</li>
+                <li class="book__item">Organized Symposium on <b class="-u--primary">“Role of probiotics in neonatal and
+                        child health”</b> for the
+                    North Zone on the 12th April 2023 in association with Probiotics Association of
+                    India (PAI)</li>
+                <li class="book__item"> Convener, Annual department fest Mikrovitae’23 organized on 12th and 13th of
+                    April 2023 by Mikrobiologika, the Department of Microbiology, Ram Lal Anand
+                    College</li>
+                <li class="book__item"> Organized talk on <b class="-u--primary">“Intellectual property rights: a
+                        plethora of opportunities”</b>,
+                    as
+                    alumni interaction, 17th Feb 2023</li>
+                <li class="book__item"> Convener, Micro Marathon, an intradepartmental event with competitions 16th
+                    September 2023</li>
+                <li class="book__item"> Organized a webinar on <b class="-u--primary">“Challenges in achieving SDG goals
+                        on Health and
+                        Nutrition
+                        in India.”</b> under SATVA- the sustainability initiative of Ram Lal Anand College, 11
+                    January 2022</li>
+                <li class="book__item"> Organized <b class="-u--primary">“Good Health Camp”</b> an event for
+                    underprivileged children of Motibagh
+                    slum on 9
+                    th April 2022
+                    www.du.ac.in Page 7</li>
+                <li class="book__item"> Organized interdepartmental program <b class="-u--primary">“PARYAV- YE PARV HAI
+                        DHARA KA”</b> under
+                    SATVA- the sustainability initiative of Ram Lal Anand College, 26th September 2022</li>
+                <li class="book__item"> Coordinator, webinar on <b class="-u--primary">“Be cancer Aware”</b> on 22nd
+                    March 2021, Mikrobiologika,
+                    Department of Microbiology, Ram Lal Anand College in association with Rajiv
+                    Gandhi Cancer Institute and Research Centre.</li>
+                <li class="book__item"><b class="-u--primary"> MIKROVITAE 2021 (online)</b>, the annual department fest
+                    of Mikrobiologika, on 3rd
+                    April 2021, Ram Lal Anand College, University of Delhi, New Delhi 110021</li>
+                <li class="book__item"> <b class="-u--primary">ONLINE YOGA SESSION</b> was organised on 21st June 2021
+                    (7:30 am- 8:45 am) on the
+                    occasion of 7th International Yoga Day.</li>
+                <li class="book__item"> <b class="-u--primary">Convener</b>, Interdepartmental Online Yoga Competition,
+                    20-21st June 2021
+                <li class="book__item"> 40 hours online certificate course on "Python in Biological Sciences” 16th
+                    January
+                    2021 to 11th April 2021, Ram Lal Anand College, University of Delhi,</li>
+                <li class="book__item"> 4 weeks online certificate course for students entitled “Scientific writing and
+                    Research Ethics” 13th
+                    July 2020 to 7
+                    th August 2020, Ram Lal Anand College,
+                    University of Delhi.</li>
+                <li class="book__item"> <b class="-u--primary">Co-coordinator</b> Live asana and Quiz Competition in
+                    association with Shri Yog
+                    Pragati
+                    & State Yoga Sports Association, Delhi 25-28th June 2020</li>
+                <li class="book__item"> Online Yoga session on 21st June 2020, 8:00 am- 9:00 am on the occasion of 6th
+                    International Yoga Day.</li>
+                <li class="book__item"> Member, Organizing Committee, International Seminar on “Nanoparticles in
+                    Biology” 29th Jan, 2020 at Ram Lal Anand College, University of Delhi, New Delhi.</li>
+                <li class="book__item"> Member, Organizing Committee: One Day National Seminar on “'Meta-genomics and
+                    Genome Editing' 5th February 2020 organized under Department of Microbiology,
+                    Ram Lal Anand College</li>
+                <li class="book__item"> Member, Organizing Committee: Microvitae (Festival of Department of
+                    Microbiology) 4th February 2020, with keynote lecture on “Synthetic Biology: from
+                    concept to applications”, Ram Lal Anand College.</li>
+                <li class="book__item"> Member, Coordinating Committee, Training Program on “ICT tools for Beginners”
+                    organized by Ram Lal Anand College on 18-19 January 2019.</li>
+                <li class="book__item"> Judge for Oral Presentations, International Conference on “Changing Environment:
+                    Understanding the Emerging Challenges and their Management Strategies” 10-12
+                    April, 2019, Conference Centre, North Campus, University Enclave, Organized by
+                    Kalindi College, University of Delhi</li>
+                <li class="book__item"> Member, Organizing Committee, National Seminar on “Probiotics: Ameliorating The
+                    Burden of Lifestyle Disorders” organized by Department of Microbiology, Ram Lal
+                    Anand College in association with Probiotic Association of India on 1
+                    st Feb 2019.</li>
+                <li class="book__item"> Co-presenter and Volunteer, International Conference on “Challenges and
+                    opportunities for agricultural nitrogen science in India” at NASC Complex, Pusa,
+                    New Delhi from 3-5 October, 2017
+                    Title of the talk- Investigating the phenotype and genotype for N-response and NUE
+                    in rice</li>
+                <li class="book__item"> Member, Organizing Committee, International Seminar on “Infectious Diseases:
+                    Current Strategies for Diagnosis and Therapy”, organized at Ram Lal Anand College,
+                    New Delhi, 2 Feb 2018</li>
+                <li class="book__item">Attended 9th International Nitrogen Conference (N2024) from February 5-8, 2024
+                    at Guru Gobind Singh Indraprastha University, New Delhi</li>
+                <li class="book__item"> Attended, 63rd Annual AMI Conference titled" Microbial Technologies for
+                    sustainable Biosphere MICROBIO Tech-2023 organized by Association of
+                    Microbiologists (AMI) India at MDU Rohtak, Haryana from 2-4 Feb 2023</li>
+                <li class="book__item"> Attended online 13th INDIA PROBIOTIC SYMPOSIUM" Science based evidence on
+                    the benefits of probiotics for Human Health organized by Gut Microbiota and
+                    Probiotic Science Foundation (India), New Delhi from 25th -26th March 2023</li>
+                <li class="book__item"> 12th India Probiotic Symposium entitled "Good Microbiome, Probiotics and Good
+                    Health- The Evidence Gets Stronger" organized by the Gut Microbiota and Probiotic
+                    Science
+                    Foundation (India), on 5th & 6th March 2022</li>
+                <li class="book__item"> Attended, Antimicrobial Chemotherapy conference 2023 ONLINE from 2-3 Feb
+                    2022, Organized by British Society for antimicrobial Chemotherapy, UK.</li>
+                <li class="book__item"> Attended, Antimicrobial Chemotherapy conference 2021 ONLINE from 2-3 Feb
+                    2021, Organized by British Society for antimicrobial Chemotherapy, UK.</li>
+                <li class="book__item"> Attended International Webinar, Antimicrobial Surveillance and consumption data
+                    –
+                    how, what and why to measure to provide meaningful data, 17th Sep 2020,
+                    organized by British Society for Antimicrobial Chemotherapy, UK.</li>
+                <li class="book__item"> Attended FEMS webinar on Vaccines in the time of COVID 19 10th Mach 2021,
+                    International.</li>
+                <li class="book__item"> FEMS Yeast Research Webinar on Genomic Insights into Yeast Diversity and
+                    Evolution" Jan 28, 2021, International Webinar</li>
+                <li class="book__item"> Attended, Coronavirus Virtual Event Series on 17th Sep 2020 Labroots Inc, US,
+                    International Conference</li>
+                <li class="book__item"> Attended, virtual “11th India Probiotic Symposium” – Role of gut microbiota and
+                    probiotics in reducing viral infections –mechanisms to combat them from 13th &
+                    14th March 2021, PAI (International)</li>
+                <li class="book__item"> Attended Two day National Conference entitled “Self-reliant India: A Gandhian
+                    Perspective” from 28th -29th September, 2020 organised by Gandhi study circle
+                    and Gujarat Vidhyapeeth, Deemed University, Ahmedabad</li>
+                <li class="book__item"> Attended Webinar Series 2020, Natural Molecules Against SARS-CoV-2: A Molecular
+                    Modelling Study’ July 7, 2020 organized by the Department of Microbiology, BCAS,
+                    DU</li>
+                <li class="book__item"> Attended Webinar series “Igniting through Science”, 28th April-3rd May 2020,
+                    Department of Microbiology, IHE, DU.</li>
+                <li class="book__item">Attended, Two days Interactive webinar covering Lifestyle, weight management,
+                    Nutrition and Immunity from 23rd -24th
+                    June, 2020 jointly organised by
+                    Department of Physical Education and IQAC, Ram Lal Anand College, University of
+                    Delhi.</li>
+                <li class="book__item"> Attended, International Webinar on Impact of COVID-19 on Society and Education:
+                    a perspective 20th June 2020 organized by SSN college, DU</li>
+                <li class="book__item"> Attended, International Summit on Women in STEM-'Visualizing the Future: New
+                    Skylines (Summit ISW-2020)”, January 23-24, 2020 orgainzed by DBT & ICGEB
+                    at India Habitat Centre, Lodhi Road, Delhi.</li>
+                <li class="book__item"> Attended, National Conference on “Wellness India and Krishi India Expo 2018” at
+                    Pragati Maidan, New Delhi on 20-22 August, 2018.</li>
+                <li class="book__item"> Attended, International Conference “4th Smart Cities India 2018 and Expo”
+                    organized at Pragati Maidan, New Delhi 23-25 May 2018</li>
+                <li class="book__item"> Attended, Wellness India conference and Exhibition, 2017 at Pragati Maidan, New
+                    Delhi from 29-31 Aug 2017.</li>
+
+            </ul>
+            <button class="btn__seemore">see more</button>
+        </section>
+        <section class="publications" id="invitedtalks">
+            <h2 class="heading__2 -u-ptop publications__heading">Invited Talks</h2>
+            <ul class="publications__list">
+                <li class="publication__item">Resource Person, <b class="-u--primary">“one-week Hands-on workshop on
+                        Basic Techniques in
+                        Microbiology jointly organized by Ram Lal Anand College, Centre for Innovation in
+                        Infectious Disease Research, Education and training (CIIDRET) & Delhi School for
+                        Skill Enhancement & Entrepreneurship Development (IoE- DSSEED), University of
+                        Delhi”</b>, 17th December 2022-23rd December 2022
+                    Title of the talks: 1) Sterilization techniques ii) Instruments used in Microbiology
+                    laboratory</li>
+                <li class="publication__item"> Resource Person, <b class="-u--primary">“Referencing using EndNote &
+                        Mendeley”</b> in the
+                    certificate course
+                    on ‘Scientific writing & Research Ethics”’ organised by Ram Lal Anand College,
+                    University of Delhi, on 24th July 2020 .</li>
+                <li class="publication__item"> Resource person, International Conference on <b
+                        class="-u--primary">“Changing Environment:
+                        Understanding the Emerging Challenges and their Management Strategies”</b>
+                    10th-12thApril, 2019 Conference Centre, North Campus, University Enclave,
+                    Organized by Kalindi College, University of Delhi.
+                    Title of the talk <b class="-u--primary"> “The Arthrospira model of nitrogen stress: signals from
+                        metabolism”</b></li>
+                <li class="publication__item"> Resource person, Ist - DBT BioCARe Conclave: Women Scientists achieving
+                    greater
+                    heights” from 8th-9thMarch 2019 NIPGR, New Delhi.
+                    Title of the talk <b class="-u--primary">“Molecular characterization of nitrate assimilation and
+                        protein
+                        productivity”</b></li>
+                <li class="publication__item"> Resource person, 5 Days INSET program for Eco club In charge Teachers,
+                    SCERT
+                    New Delhi, 26th
+                    -27th
+                    July 2013.</li>
+                <li class="publication__item"> Resource person, 5 Days INSET program for Eco club In charge Teachers,
+                    SCERT
+                    New Delhi, 11-13th October 2012.</li>
+            </ul>
+        </section>
+        <section class="book" id="workshops">
+            <h2 class="heading__2 -u-ptop book__heading">Workshops </h2>
+            <ul class="book__list">
+                <li class="book__item"><b class="-u--primary">Coordinator</b>, Hands on training workshop on
+                    “Metagenomics Sequencing and
+                    Analysis: 16S and WGS” organized by IQAC, RLA college and Mikrobiologika,
+                    Department of Microbiology, RLA college with Biokart India Ltd. on 10th October
+                    2023</li>
+                <li class="book__item"> 2 month Yoga workshop ”Holistic Harmony” at Ram Lal Anand College from 3
+                    october 2023 to 8 December 2023 as Co-convener, Yoga and Meditation society</li>
+                <li class="book__item"> Yes+ Youth Empowerment and Skills Workshop at Ram Lal Anand College from 30
+                    October 2023 to 3 November 2023 in association with Art of Living as Co-convener,
+                    Yoga and Meditation society</li>
+                <li class="book__item"> <b class="-u--primary">Coordinator</b> for an Outreach workshop Under DBT Star
+                    College Scheme titled “How
+                    microorganisms look, grow and replicate” organized by the Department of
+                    Microbiology, Ram Lal Anand College on 2
+                    nd November 2022 for students of class XI
+                    and XII, DLDAV Public School, RK Puram</li>
+                <li class="book__item"> <b class="-u--primary">Coordinator</b> for an Outreach workshop Under DBT Star
+                    College Scheme titled” How
+                    microorganisms look, grow and replicate” organized by the Department of
+                    Microbiology, Ram Lal Anand College on for students of class X1 and X11, Ramjas
+                    International School, RK Puram</li>
+                <li class="book__item"> Member organizing team for an Outreach workshop Under DBT Star College Scheme
+                    titled” Journey To The Microbial Realm” organized by the Department of
+                    Microbiology, Ram Lal Anand College on 11th October, 2022 for students of class VIII
+                    at Apeejay School Panchsheel Park ,</li>
+                <li class="book__item"> <b class="-u--primary">Coordinator</b>, Hands-on Summer Training under DBT star
+                    college scheme on
+                    “Exploring and Identifying Microbial diversity” organized by the Department of
+                    Microbiology, Ram Lal Anand College from 13th July 2022- 17th July 2022.</li>
+                <li class="book__item"> <b class="-u--primary">Convener</b>, 2 days National Workshop on "Holistic
+                    Fitness - Boost your immunity
+                    and
+                    prevent illness" , 23-24th June 2021 (2:00-4:00 pm, Zoom) by Yoga and Meditation
+                    society in collaboration with the Department of Physical Education, RLA College</li>
+                <li class="book__item"><b class="-u--primary">Coordinator</b>, One Month Online Yoga Workshop (zoom)
+                    from 1st- 30th June 2021 by
+                    Yoga and Meditation Society, RLAC.</li>
+                <li class="book__item"> <b class="-u--primary">Coordinator</b>, 2 days DBT Sponsored National Workshop
+                    on MOLECULAR DOCKING
+                    IN DRUG DESIGN from 31st March to 1st April 2021, organized by Department of
+                    Microbiology, Ram Lal Anand College under DBT -Star College Scheme.</li>
+                <li class="book__item"> <b class="-u--primary">Member</b>, Organizing Committee, Online Faculty
+                    Development Program on Biosafety,
+                    Bioethics and IPR, 1 week (24-28 August 2020), organised by Department of
+                    Microbiology, Ram Lal Anand College, University of Delhi.</li>
+                <li class="book__item"> Resource person on 24th July 2020 titled “Referencing using EndNote & Mendeley”
+                    in
+                    the certificate course on <b class="-u--primary">"Scientific writing & Research Ethics”</b>’
+                    organised by Ram Lal
+                    Anand College, University of Delhi.</li>
+                <li class="book__item"> <b class="-u--primary">Member</b>, Organising team, Certificate course on
+                    ‘Python in Biological Sciences”
+                    organised by Ram Lal Anand College, University of Delhi.</li>
+                <li class="book__item"> <b class="-u--primary">Coordinator</b>, One Month Online Yoga Workshop from 1st-
+                    30th June 2020 by Yoga and
+                    Meditation Society, RLAC in association with Shri Yog Pragati.</li>
+                <li class="book__item"> Co-Organizer Workshop on “International Yoga Day 2019” 3-day 19-21st June 2019,
+                    RLA College</li>
+                <li class="book__item"> <b class="-u--primary">Member</b>, Organizing Committee, Workshop on
+                    “International Yoga Day 2018” 3-day
+                    19-21st June 2018, RLA College</li>
+                <li class="book__item"> <b class="-u--primary">Member</b>, Organizing Committee, Workshop on
+                    “International Yoga Day 2017” 3-day
+                    19-21st June 2017 RLA College</li>
+                <li class="book__item">Completed One-Week National Faculty Development Program on <b
+                        class="-u--primary">“Essential Skill in
+                        Genomics”</b> jointly organized by Ram Lal Anand College (Department of
+                    Microbiology); Centre for Innovation in Infectious Disease Research, Education and
+                    Training (CIIDRET), University of Delhi, South Campus; Institution of
+                    Eminence-Delhi School of Skill Enhancement and Entrepreneurship Development
+                    (IOE-DSSEED); University of Delhi (Skill Enhancement Course Committee) and Guru
+                    Angad Dev Teaching Learning Centre, SGTB Khalsa College, University of Delhi
+                    under the Pandit Madan Mohan Malaviya National Mission on Teachers and
+                    Teaching (PMMMNMTT) of Ministry of Education. One week from 4
+                    th August to 11th
+                    August 2023.
+                <li class="book__item">Completed Online Hands-on Workshop on <b class="-u--primary">Drug Discovery</b>
+                    from July 4
+                    th
+                    to 12th 2023
+                    organized by Zastra Innovations, Bengaluru (International)</li>
+                <li class="book__item">Attended One-Day Workshop for Educators on "YOGA: PHILOSOPHY AND
+                    PRACTICE", A Value addition course (VAC) for Undergraduate Programme.
+                    Organized by Value Addition Courses Committee and Shri Vankateshwara College,
+                    University of Delhi on 22nd May 2023.</li>
+                <li class="book__item">Completed, 6 days of Online Hands-on Workshop on Next-Gen <b
+                        class="-u--primary">Drug Discovery</b>
+                    Software for Lead Optimisation from April 9th to April 24th 2021 organised by
+                    Zastra Innovations, Bengaluru (International)</li>
+                <li class="book__item">Attended National workshop titled <b class="-u--primary">“Bacterial Genome
+                        Identification, Sequencing
+                        And Characterization”</b> on 20th April, 2022 (online), organized by Centre for
+                    Innovation in Infectious Disease Research, Education and Training (CIIDRET) and Delhi School of
+                    Skill Enhancement and Entrepreneurship Development
+                    (DSSEED-IoE), University of Delhi</li>
+                <li class="book__item"> Completed Online Workshop on <b class="-u--primary">Introduction to Systematic
+                        Reviews and
+                        Meta-Analysis in Health Research</b> from 17th - 18th March 2021 by ICMR National
+                    Institute of Medical Statistics</li>
+                <li class="book__item"> <b class="-u--primary">Attended Online Bioinformatics Workshop</b>, 12 - 13
+                    April, 2021, Department of
+                    Microbiology,
+                    Institute of Home Economics,</li>
+                <li class="book__item"> Attended Online Faculty Development Program on <b class="-u--primary">ICT Tools
+                        for Effective Teaching
+                        Learning</b>, 1 week (5-9 August 2020), organized by Media Production Centre in
+                    association with Internal Quality Assurance Cell (IQAC).</li>
+                <li class="book__item"> FDP on <b class="-u--primary">Biomedical Nanotechnology</b>, 4 weeks (Aug-Sep
+                    2019) , NPTEL-AICTE</li>
+                <li class="book__item"> Attended Workshop on <b class="-u--primary"> “Stress Management Skills”</b> 1
+                    day, 22nd October 2019
+                    organized by Centre for Human Values, Ethics and Life Skills, RLA College</li>
+                <li class="book__item"> Attended FDP on <b class="-u--primary">“Quality assurance in HEIs: Reorienting
+                        Teaching-Learning
+                        Paradigm”</b> organized by Ram Lal Anand College on 15-19 March 2019.</li>
+                <li class="book__item"> Attended National Symposium & workshop <b class="-u--primary">“Yoga and
+                        Meditation for the holistic
+                        wellbeing”</b> at Daulat Ram college, University of Delhi on 7 March 2019.</li>
+                <li class="book__item"> Attended, FDP <b class="-u--primary">“Writing Research Proposals and Addressing
+                        IPR Related Issues”</b>
+                    organized by Ram Lal Anand College on 29-30 March 2019</li>
+                <li class="book__item"> Attended Workshop on <b class="-u--primary">"Intellectual Property Rights (IPR )
+                        and Entrepreneurship :
+                        How to kick start your start-up”</b> kick start your start-up”kick start your start-up”
+                    Organized at Ram Lal Anand College on 30th March 2019.</li>
+            </ul>
+        </section>
+        <section class="book resource" id="researchprojects">
+            <h2 class="heading__2 -u-ptop book__heading">Reserach Projects</h2>
+            <ul class="book__list">
+                <li class="book__item">DBT funded research project on <b class="-u--primary">"Molecular characterization of nitrate response
+                    and N metabolism in A. platensis"</b> of 25.95 lakhs, (2012-2016)</li>
+                <li class="book__item"> DBT- BBSRC UK funded research project on <b class="-u--primary">"Newton-Bhabha Virtual Centre on
+                    Nitrogen Efficiency of Whole-cropping Systems for improved performance
+                    and resilience in agriculture (NEWS India-UK)"</b> as Co-PI, (2016-2018), 17 June
+                    2016 – 16 Dec 2019</li>
+                <li class="book__item"> Resistome metagenomic profiling of bioaerosols in metro network in Delhi- NCR,
+                    (Dr R K Gupta, Dr Sunila (Co-PI), Dr Prerna Diwan), (2021-2024) ICMR,
+                    Government of India</li>
+                <li class="book__item"> Isolation and screening of plastic degrading bacteria from soils collected from
+                    different landfill sites of Delhi, CRG Project 2020-22</li>
+                <li class="book__item"> Exploring the plastic degradation potential of microbial consortium isolated
+                    from landfill sites in Delhi, CRG project 2023-24</li>
+
+            </ul>
+        </section>
+        <section class="awards" id="awards">
+            <h2 class="awards__heading">Awards and Distinctions</h2>
+            <ul class="awards__list">
+                <li>DBT travel grant June, 2015 (DBT/CTEP/02/201500409)</li>
+                <li> Awarded Bio-CARE fellowship (November, 2012)</li>
+                <li> Assistant Editor of the Springer journal (Physiology and Molecular Biology of
+                    Plants)</li>
+                <li> CSIR RA /SRF extended from September, 2010- October2012.</li>
+                <li> Qualified the CSIR/UGC-NET examination for the JRF in December, 2002.</li>
+            </ul>
+        </section>
+        <section class="association" id="association">
+            <h2 class="association__heading">Association With Professional Bodies</h2>
+            <ul class="association__list">
+                <li><b>Assistant Editor</b>, Springer journal (Physiology and Molecular Biology of Plants) since
+                    2009</li>
+                <li> <b>Life Member</b>, SCON (Society for conservation of Nature)</li>
+                <li> <b>Life Member</b>, AMI (Association of Microbiologists)</li>
+                <li> <b>Life member</b>, PAI (Probiotics Association of India)</li>
+                <li> <b>Member</b>, British Society for Antimicrobial Chemotherapy since 1 January 2021</li>
+                <li> <b>Life member </b>, MSI</li>
+
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
