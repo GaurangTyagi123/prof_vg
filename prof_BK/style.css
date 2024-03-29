@@ -101,7 +101,7 @@ body {
   display: grid;
   height: 100vh;
   /* overflow-x: hidden; */
-  grid-template-rows: 0vh 100vh 100vh max-content  70vh max-content max-content 100vh max-content max-content max-content 60vh 60vh;
+  grid-template-rows: 0vh 100vh 100vh max-content  70vh max-content max-content 100vh max-content max-content max-content max-content max-content max-content 90vh 90vh;
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
   scroll-behavior: smooth;
   scroll-padding: 10rem;
@@ -118,16 +118,22 @@ body {
   border-radius: 2rem;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .container {
+    grid-template-rows: 0vh 100vh 100vh 150vh  50vh max-content max-content 100vh max-content  max-content max-content max-content max-content max-content 60vh 40vh;
+    grid-template-columns: 1fr;
+  }
+}
 @media only screen and (max-width: 40.635em) {
   .container {
-    grid-template-rows: 0vh 100vh 100vh 150vh  60vh max-content max-content 100vh max-content  max-content max-content 60vh 60vh;
+    grid-template-rows: 0vh 100vh 100vh 150vh  60vh max-content max-content 100vh max-content  max-content max-content max-content max-content max-content 60vh 40vh;
     grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 38.75em) {
   .container {
-    grid-template-rows: 0vh 100vh 60vh 180vh 60vh max-content max-content 100vh max-content  max-content max-content 60vh 60vh;
+    grid-template-rows: 0vh 100vh 60vh 180vh 60vh max-content max-content 100vh max-content  max-content max-content max-content max-content max-content 60vh 40vh;
     grid-template-columns: 1fr;
   }
 }
@@ -267,7 +273,7 @@ section {
 .submenu{
   position: absolute;
   width: 20%;
-  height: 20rem;
+  height: 40rem;
   background-color: #eee;
   display: none;
   flex-direction: column;
@@ -690,7 +696,8 @@ section {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-  /* width: 100%; */
+  /* align-content: center; */
+  width: 90%;
   height: 100%;
   gap: 5rem 5rem;
   padding: 0 5rem;
@@ -764,7 +771,7 @@ section {
   /* font-family: "Roboto"; */
   font-weight: 200;
   font-size: 1.7rem;
-  width: 80%;
+  /* width: 80%; */
   color: #555;
   text-align: start;
   font-family: var(--font);
@@ -773,11 +780,11 @@ section {
   overflow-wrap: break-word;
 }
 
-.education__3 {
+.education__1 {
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1253,7 +1260,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5rem 0;
+  font-size: 1.5rem !important;
   height: 50%;
   font-size: 1.3rem;
   color: #666;
@@ -1521,7 +1530,25 @@ section {
   list-style: none !important;
   text-transform: uppercase !important;
 }
+.-u--highlight{
+  grid-column: 1/-1!important;
+  align-self: center!important;
+  justify-self: center!important;
+  list-style: none!important;
+  text-transform: uppercase!important;
+  font-style: italic!important;
+  font-size: 1.5rem!important;
+  font-weight: 400!important;
+}
+.-u--columize{
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)) !important;
+  font-size: 1.5rem !important;
+  justify-items: start !important;
 
+}
+#software li{
+  width: 100%;
+}
 @media only screen and (max-width:33.75em) {
   .-u--overflow-control {
     height: 100% !important;
