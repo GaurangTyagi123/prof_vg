@@ -101,7 +101,7 @@ body {
   display: grid;
   height: 100vh;
   /* overflow-x: hidden; */
-  grid-template-rows: 0vh 100vh 100vh 100vh  max-content max-content 70vh ;
+  grid-template-rows: 0vh 100vh 100vh max-content  max-content max-content 70vh ;
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
   scroll-behavior: smooth;
   scroll-padding: 10rem;
@@ -120,14 +120,14 @@ body {
 
 @media only screen and (max-width: 40.635em) {
   .container {
-    grid-template-rows: 0vh 100vh 100vh 100vh  max-content max-content 60vh max-content max-content;
+    grid-template-rows: 0vh 100vh 100vh max-content  max-content max-content 60vh;
     grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 38.75em) {
   .container {
-    grid-template-rows: 0vh 100vh 60vh 150vh max-content max-content 60vh max-content max-content;
+    grid-template-rows: 0vh 100vh 60vh 100vh max-content max-content 60vh;
     grid-template-columns: 1fr;
   }
 }
@@ -435,9 +435,7 @@ section {
   scale: 1;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
 }
-.contact__details__email{
-  width: fit-content;
-}
+
 @media only screen and (max-width: 43.75em) {
   .contact .detail {
     font-size: 1.5rem;
@@ -650,7 +648,7 @@ section {
 @media only screen and (max-width: 38.75em) {
   .education__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     align-items: center;
     justify-content: center;
     place-content: center;
@@ -692,7 +690,7 @@ section {
   /* font-family: "Roboto"; */
   font-weight: 200;
   font-size: 1.7rem;
-  width: 80%;
+  width: 100%;
   color: #555;
   text-align: start;
   font-family: var(--font);
@@ -875,7 +873,7 @@ section {
   .specialization__heading {
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 2rem;
+    text-underline-offset: 1rem;
   }
 }
 
@@ -979,7 +977,7 @@ section {
   display: grid;
   align-items: baseline;
   justify-content: center;
-  margin: 0 8rem;
+  margin: 0 3rem;
   padding: 5rem 0;
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
   /* grid-template-rows: repeat(6, 1fr); */
